@@ -20,4 +20,6 @@ net 263 SDK的基础模块
 
 # 使用
 
-此库仅为RtSDK和PlayerSDK的底层依赖库，请基于产品需求选择合适的库使用
+此库仅为RtSDK和PlayerSDK的底层依赖库，请基于产品需求选择合适的库(RtSDK、PlayerSDK、FASTSDK)使用
+
+RtSDK https://github.com/net263/RtSDK
