@@ -10,15 +10,16 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "GSBaseKit"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "Net 263 SDK base component"
-
+  spec.platform = :ios
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  GSBase contain GSCommonKit.framework GPUImage.framework GSDocKit.framework and libs that about FFMPEG and faad
                    DESC
 
   spec.homepage     = "https://github.com/net263/GSBaseKit.git"
@@ -29,10 +30,11 @@ Pod::Spec.new do |spec|
 
 
   spec.source       = { :git => "https://github.com/net263/GSBaseKit.git", :tag => "#{spec.version}" }
-
+  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   spec.vendored_frameworks = 'GSCommonKit.framework','GPUImage.framework','GSDocKit.framework'
   spec.vendored_libraries = 'Libs/*.a', 'Libs/ffmpeg/*.a'
   spec.static_framework = true
   spec.libraries = 'z', 'c++','iconv','icucore'
-
+  spec.ios.frameworks = 'AudioToolbox','VideoToolbox','CoreImage'
+  spec.frameworks = 'UIKit', 'GLKit','OpenAL'
 end
