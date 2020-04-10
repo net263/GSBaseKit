@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "GSBaseKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Net 263 SDK base component"
   spec.platform = :ios
   # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/net263/GSBaseKit.git", :tag => "#{spec.version}" }
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  spec.vendored_frameworks = 'GSCommonKit.framework','GPUImage.framework','GSDocKit.framework'
+  spec.vendored_frameworks = 'GSCommonKit.framework','GPUImage.framework','GSDocKit.framework','GSHongbaoKit.framework'
   spec.vendored_libraries = 'Libs/*.a', 'Libs/ffmpeg/*.a'
   spec.static_framework = true
   spec.libraries = 'z', 'c++','iconv','icucore'
