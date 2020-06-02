@@ -59,6 +59,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (unsigned int)unprocessdNumber;
 
+- (BOOL)isPlaying;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (id <GSAudioPlayProtocol>)audioQueuePlayerWithConfiguration:(AudioStreamBasicDescription)desc;
 
 + (id <GSAudioPlayProtocol>)openalPlayer;
-
++ (id <GSAudioPlayProtocol>)audioUnitPlayer;
 @end
 
 NS_ASSUME_NONNULL_END

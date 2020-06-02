@@ -61,6 +61,8 @@ typedef NS_ENUM(NSInteger, GSDocumentAnnoType){
 @property (assign, nonatomic)short pageHeight;//文档页的高
 @property (strong, nonatomic)NSMutableArray *annosArray;//该文档页上的所有标注数据,替换上面的dic
 @property (strong, nonatomic)NSData *aniCfg; //动画信息
+
+@property (assign, nonatomic) unsigned docID;//文档页ID
 @end
 
 //文档标注的基类

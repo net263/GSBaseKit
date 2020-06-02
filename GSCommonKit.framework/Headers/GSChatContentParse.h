@@ -23,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (GSChatContentParse *)sharedInstance;
 
 // <IMG src="emotion\emotion.qq.gif" custom="false"> --> attachment + text
-- (NSAttributedString *) attributeStringFromHtml:(NSString *)html
+- (NSMutableAttributedString *) attributeStringFromHtml:(NSString *)html
                                         textFont:(UIFont*)font
-                                       imageType:(NSString *)type;
+                                       imageType:(NSString * _Nullable)type;
 
 // 【表情】--> <IMG src="emotion\emotion.qq.gif" custom="false">
 - (NSString *)htmlFromEmotionText:(NSString *)emotion;
@@ -33,8 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)stringContainsEmoji:(NSString *)string;
 
-//获取所有的表情，GIF图获取d第一帧，主要用于表情面板显示
 -(NSArray*) allEmotions;
+
+- (NSArray *)all36Emotions;
 
 @end
 

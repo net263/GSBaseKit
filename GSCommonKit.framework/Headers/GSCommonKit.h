@@ -52,10 +52,9 @@
 #import <GSCommonKit/GSCommonConst.h>
 #import <GSCommonKit/GSConstants.h>
 #import <GSCommonKit/GSCommonKitMacro.h>
-#import <GSCommonKit/GSAudioManager.h>
-
+#import <GSCommonKit/GSAudioUnitPlayer.h>
 //聊天的封装，包括GIF动画的显示
-#import <GSCommonKit/GSGifLabel.h>
+#import <GSCommonKit/GSTextAttributeLabel.h>
 #import <GSCommonKit/GSChatContentParse.h>
 #import <GSCommonKit/GSBaseEmotion.h>
 

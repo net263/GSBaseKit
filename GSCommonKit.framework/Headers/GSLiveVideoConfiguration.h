@@ -72,6 +72,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL landscape;
 ///< ≈sde3分辨率
 @property (nonatomic, assign, readonly) NSString *avSessionPreset;
+/** The mirror control mirror of front camera is on or off */
+@property (nonatomic, assign) BOOL mirror;
 
 @end
 

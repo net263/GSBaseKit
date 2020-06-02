@@ -26,7 +26,7 @@
 
 - (nullable instancetype)initWithVideoStreamConfiguration:(nullable GSLiveVideoConfiguration *)configuration;
 - (void)encodeImageBuffer:(CVImageBufferRef) imageBuffer;
-- (BOOL)createSession;
+- (void)resetEncodingSession;
 
 
 @end

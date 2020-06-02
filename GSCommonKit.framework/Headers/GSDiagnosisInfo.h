@@ -63,5 +63,6 @@ typedef void (^GSUploadWithErrorBlock)(GSDiagnosisType type,NSString* errorDescr
 /**
   打包log
  */
-+(void)packCurrentLog;
++ (void)packCurrentLog;
+
 @end

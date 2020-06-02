@@ -107,5 +107,10 @@ typedef void (^GSWebAccessCompletion)(NSUInteger result,NSDictionary *_Nullable 
 - (void)accessInfoByNumber:(nonnull GSConnectInfo*)info
                 completion:(GSWebAccessCompletion)completion;
 
+#pragma mark - vod fuc
+
+- (void)accessWithParam:(nonnull GSConnectInfo*)info
+               download:(BOOL)isDownload
+             completion:(void (^)(NSDictionary *_Nullable resultDic, NSError *error))completion;
 @end
 NS_ASSUME_NONNULL_END

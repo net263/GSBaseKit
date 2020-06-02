@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "GSBaseKit"
-  spec.version      = "3.7.10"
+  spec.version      = "3.7.11"
   spec.summary      = "Net 263 SDK base component"
   spec.platform = :ios
   # This description is used to generate tags and improve search results.
